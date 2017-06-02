@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GifTastic</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<!-- Overall Bootstrap Grid -->
+  <div class="container">
+
+    <!-- Jumbotron with Title -->
+    <div class="jumbotron">
+
+      <h1 class="text-center"><strong>Welcome to GifTastic Entertainment!</strong></h1>
+      <h2 class="text-center" id="instructions">Press the buttons to see GIFs from your favorite college football team!</h2>
+
+    </div> <!-- End Jumbotron -->
+
+    <!-- Row containing the team buttons -->
+    <div class="row" id="buttonPanel">
+    </div> <!-- End row with team buttons -->
+
+    <!-- Row containing the Gifs and the user form -->
+    <div class="row">
+
+      <!-- Left panel containing the Gifs -->
+      <div class="col-lg-10" id="gifPanel">
+      </div> <!-- End left panel containing the Gifs  -->
+
+      <!-- Right panel containing the user form -->
+      <div class="col-lg-2 formPanel"> 
+        <form id="team-form">
+          <label for="team-input" class="inputLabel">Add a College Football Team!</label>
+          <input type="text" id="team-input"><br>
+
+          <!-- Button triggers a new team to be added -->
+          <input id="add-team" type="submit" value="Submit">
+        </form>
+      </div> <!-- End right panel containing the user form -->
+
+    </div> <!-- End row with Gifs and user form -->
+
+    <!-- Row containting the website footer -->
+    <div class="row">
+
+      <div id="footerSpacer">
+      </div>
+
+      <div class="footer navbar-fixed-bottom" id="footerPanel">
+        <div class="copyright">
+          © 2017, Matt Gallagher
+        </div>
+      </div>
+
+    </div> <!-- End the footer row -->
+
+  </div> <!-- End Bootstrap Grid -->
+	
+
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>
